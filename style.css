@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, footer{
+    text-align: center; 
+}
+header{
+    margin-top: 20px;
+}
+
+.container-slide{
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+    height: 75vh;
+    background-color: black;
+    margin: 4vh auto; /* direita e esquerda auto e 20 de altura */
+    border-radius: 10px;
+    box-shadow: 0 10px 40px black;
+}
+
+.container-items{
+    position: absolute;
+    display: flex; /*as imagems vao ficar uma ao lado da outra*/
+    width: 75vw;
+    height: 75vh;
+    border-radius: 10px;
+    overflow: hidden; /* Para aparecer somente o que está dentro do container-items e ocultar as imagens dos lados. */
+}
+
+.item{
+    width: 75vw;
+    height: 75vh;
+    transition: all 2s ease-in-out;
+}
+
+.item:first-child{
+    margin-left: -100%;
+}
+
+.item img{
+    width: 75vw;
+    height: 75vh;
+    border-radius: 10px;
+    object-fit: cover; /* serve para nao distorcer a imagem */
+}
+
+.action-button{
+    display: flex; 
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif ;
+    z-index:1 ; /*pesquisar*/
+    border-radius: 10px;
+    width: 50px;
+    justify-content: center; /* Alinhar horizontalmente oconteúdo dentro da div .action-button  */
+    align-items: center; /* Alinhar verticalmente oconteúdo dentro da div .action-button  */
+    color: #00000000;
+    user-select: none;
+}
+
+.action-button:hover{
+    color: white;
+    background-color: #00000055;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+
+footer{
+   font-size: 12px; 
+}
